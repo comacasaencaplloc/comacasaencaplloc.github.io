@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <title>Secret Santa 2020</title>
+  <link href="https://fonts.cdnfonts.com/css/athene" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/chantelli-antiqua" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    html {
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      height: 100%;
+      display: grid;
+    }
+
+    .mainLogo {
+      float: left;
+    }
+
+    .wrapper {
+      display: grid;
+    }
+
+    fieldset {
+      border: none;
+    }
+
+    label[for=expandBox] {
+      cursor: pointer;
+    }
+
+    input#expandBox {
+      display: none;
+    }
+
+    input#expandBox:not(checked)~* {
+      visibility: hidden;
+    }
+
+    input#expandBox:checked~* {
+      visibility: visible;
+    }
+
+    .trueCenter {
+      margin: auto;
+    }
+
+    .mainContainer {
+      width: 50vw;
+    }
+
+    .secondContainer {
+      width: 25vw;
+    }
+
+    .mainText {
+      text-align: center;
+      padding: 10px 0px 0px 0px;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 640px) {
+      body {}
+
+      .mainContainer {
+        width: 100%;
+      }
+
+      .secondContainer {
+        width: 100%;
+      }
+
+      .mainLogo {
+        float: left;
+      }
+    }
+  </style>
+</head>
+
+<body style="overflow-x:hidden;">
+  <div class="mainContainer wrapper trueCenter">
+    <img src="assets/images/fusta_logo.png" class="mainLogo">
+    <h1 class="mainText" style="font-family: 'Athene', sans-serif;">
+      Culinary experience for two at FUSTA orgànic restaurant.
+    </h1>
+    <div class="wrapper"><i class="material-icons trueCenter">restaurant_menu</i></div>
+    <h2 class="mainText" style="font-family: 'Athene', sans-serif;">
+      Masterclass · Apron · Dinner
+    </h2>
+    <h5 class="mainText trueCenter" style="font-family: 'Athene', sans-serif;">
+      "Cuina de primavera. La carxofa de mil maneres"
+    </h5>
+    <h4 class="mainText trueCenter" style="font-family: 'Athene', sans-serif;">
+      <i class="material-icons">book_online</i> Save the date: March 5, 2021
+    </h4>
+  </div>
+  <div class="mainContainer wrapper trueCenter">
+    <div class="wrapper"><i class="material-icons trueCenter">horizontal_rule</i></div>
+
+    <h2 class="message trueCenter">Let's create more memories together</h2>
+    <div class="wrapper"><i class="material-icons trueCenter" style="color: red;">favorite</i></div>
+
+    <h6 class="mainText" style="font-family: 'Chantelli Antiqua', sans-serif;">
+      <span style="font-size:50px;line-height:0.6em;opacity:0.2">❝</span>
+      True love is sharing both joyous and desparing moments. It is having each other in thoughts and in heart even
+      physically far from each other.
+    </h6>
+    <h6>
+    </h6>
+  </div>
+  <form id="form" action="slideshow.html" method="GET" class="secondContainer wrapper trueCenter">
+    <span class="wrapper"><label for="expandBox" class="trueCenter">Insert memories here <i
+          class="material-icons">add_a_photo</i></label></span>
+    <input type="checkbox" id="expandBox">
+    <fieldset class="trueCenter" style="padding: 20px;">
+      <label for="pwd">Password</label><span style="color:red;">*</span><br>
+      <input id="pwd" name="pwd" type="password" required="" placeholder="password" pattern="J&M4ever" oninvalid="this.setCustomValidity('Invalid password')">
+      <input id="sbmBtn" type="submit" value="enter" style="display: none;">
+      <i class="material-icons" onclick="sbmBtn.click()" style="cursor: pointer;">login</i>
+    </fieldset>
+
+    <div class="wrapper">
+      <div class="trueCenter"><img style="margin: -15px;" src="assets/images/bulb.png"> <span>TIPS</span>
+        <div>Rotate to landscape mode</div>
+        <div>Turn up the volume!</div>
+      </div>
+    </div>
+  </form>
+
+
+</body>
+
+</html>

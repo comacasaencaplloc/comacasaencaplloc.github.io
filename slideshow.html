@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base target="_top">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/VincentLoy/simplyCountdown.js@latest/css/simplyCountdown.theme.default.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/themes/splide-sea-green.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/styles/styles.css" />
+  <script src="https://cdn.jsdelivr.net/gh/VincentLoy/simplyCountdown.js@latest/dist/simplyCountdown.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+</head>
+
+<body style="overflow:hidden;">
+
+  <!-- TODO: Audio -->
+  <audio id="music" style="display:none;">
+    <source id="audioSource" src="" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Images -->
+  <div class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <!-- Countdown -->
+        <li class="splide__slide wrapper" style="display:grid;">
+          <span id="together" class="countdown simply-countdown-losange" style="margin:auto;"></span>
+          <h1 class="trueCenter">since the first kiss</h1>
+        </li>
+        <li class="splide__slide wrapper" style="display:grid;">
+          <span id="married" class="countdown simply-countdown-losange" style="margin:auto;"></span>
+          <h1 class="trueCenter">since we tied the knot</h1>
+        </li>
+        <li class="splide__slide wrapper" style="display:grid;">
+          <span id="family" class="countdown simply-countdown-losange" style="margin:auto;"></span>
+          <h1 class="trueCenter">since we were blessed</h1>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Info bar -->
+  <div id="snackbar"></div>
+
+  <!-- Logic -->
+  <script src="assets/scripts/script.js"></script>
+</body>
+
+</html>
